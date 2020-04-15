@@ -45,6 +45,7 @@ Overview
 
 ### Main functions of the pipeline :
 
+--- 
 * Convert Color image to grayscale for easier manipulation.
 
 * Applying Gaussian blur to smooth the edged on the image.
@@ -57,7 +58,7 @@ Overview
 
 * Average all left and right lane line to create a smooth line in each side and annotated them with red color.
 
-
+---
 
 First the Pipeline was tested on images contained in **test_images** folder
 and store them in **test_images_output** folder.
