@@ -1,0 +1,24 @@
+name: carnd
+channels:
+    - conda-forge
+dependencies:
+    - python==3.5.2
+    - numpy
+    - matplotlib
+    - jupyter
+    - opencv3
+    - pillow
+    - scikit-learn
+    - scikit-image
+    - scipy
+    - h5py
+    - eventlet
+    - seaborn
+    - pandas
+    - ffmpeg
+    - imageio
+    - pyqt
+    - pip:
+        - moviepy
+        - opencv-python
+        - imageio-ffmpeg
