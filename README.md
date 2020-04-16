@@ -42,22 +42,31 @@ Overview
 
 * Main Goal of this project is to create a pipeline to detect lanelines automatically and annotated them with a solid red line.
 
+[project rubric](https://review.udacity.com/#!/rubrics/322/view)
+
 
 ### Main functions of the pipeline :
 
 --- 
 * Convert Color image to grayscale for easier manipulation.
+<img src="readme_image/gray_scale.jpg" width="480" alt="Combined Image" />
 
 * Applying Gaussian blur to smooth the edged on the image.
+<img src="readme_image/blurred.jpg" width="480" alt="Combined Image" />
 
 * Applying Canny edge detection with appropiate parameters to detect edge.
+<img src="readme_image/canny_edge.jpg" width="480" alt="Combined Image" />
 
 * Considering Edges in a Region Of Interest(ROI) and discard all other edges.
+<img src="readme_image/roi_image.jpg" width="480" alt="Combined Image" />
 
 * Applying Hough transform to find all the lines.
 
 * Average all left and right lane line to create a smooth line in each side and annotated them with red color.
+<img src="readme_image/line_image.jpg" width="480" alt="Combined Image" />
 
+* Adding the line with the original image.
+<img src="readme_image/final.jpg" width="480" alt="Combined Image" />
 ---
 
 First the Pipeline was tested on images contained in **test_images** folder
@@ -80,23 +89,6 @@ Then the pipeline was applied on videos.
 * To make it more robust Color space can be used to find white lines and the yellow lines simulteneously and more effectively.
 
 
-
-
-Creating a Great Writeup
----
-For this project, a great writeup should provide a detailed response to the "Reflection" section of the [project rubric](https://review.udacity.com/#!/rubrics/322/view). There are three parts to the reflection:
-
-1. Describe the pipeline
-
-2. Identify any shortcomings
-
-3. Suggest possible improvements
-
-We encourage using images in your writeup to demonstrate how your pipeline works.  
-
-All that said, please be concise!  We're not looking for you to write a book here: just a brief description.
-
-You're not required to use markdown for your writeup.  If you use another method please just submit a pdf of your writeup. Here is a link to a [writeup template file](https://github.com/udacity/CarND-LaneLines-P1/blob/master/writeup_template.md). 
 
 
 
