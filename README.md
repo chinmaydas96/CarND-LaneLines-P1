@@ -67,7 +67,17 @@ and store them in **test_images_output** folder.
 Then the pipeline was applied on videos.
 
 
+## Shortcomings :
 
+* This pipeline doesn't work well in a road like sunshine or cross light as in grayscale image either it is all white or all black. So it didn't able to detect the Lane lines in those environments.
+
+* Another shortcoming is the reflection of car glass on the images which sometimes create noises when detecting edges.
+
+* If we take suddent turn on lanes , it will not be able to correctly identified.
+
+## Future Improvements :
+
+* To make it more robust Color space can be used to find white lines and the yellow lines simulteneously and more effectively.
 
 
 
